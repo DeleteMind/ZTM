@@ -4,20 +4,30 @@
         <title>Register</title>
     </head>
     <body>
-        <form>
-            First Name: <input type="text"><br> <!--type="" means the type of form tha we used-->
-            Last NAme: <input type="text"><br>
-            Email: <input type="email" required><br> <!--The Type="" its for email type. Required make sure that email as an input  -->
-            Birthday: <input type="date"><br>
+        <form method="">
+            First Name: <input type="text" name="firstname"><br> <!--type="" means the type of form tha we used-->
+            Last NAme: <input type="text" name="lastname"><br>
+            Email: <input type="email" name="email" required><br> <!--The Type="" its for email type. Required make sure that email as an input  -->
+            Password: <input type="password" name="password" min="5"><br> <!-- add a password and min="5" a minimum of five chareters is required its required -->
+            Birthday: <input type="date" name="date"><br>
             Gender:<br>
             <input type="radio" name="gender">Male<br> <!--radio it is for radio buttons, we put name="or pick just one gender in this case" -->
             <input type="radio" name="gender">Female<br>
             <input type="radio" name="gender">Other<br>
             Pets:<br>
-            <input type="checkbox">Cat<br>
-            <input type="checkbox">Dogs<br>
+            <input type="checkbox" name="cat">Cat<br>
+            <input type="checkbox" name="dog">Dogs<br>
+            Cars:<br>
+            <select>
+                <option value="volvo" name="volvo">Volvo</option> 
+                <option value="Audi" name="audi">Audi</option>
+            </select><br>
             <input type="submit" value="Register!"> <!-- Type="submit" add a button to submite and de value="" is for the name of the button -->
             <input type="reset"> <!--for reset the fieds abouve-->
         </form>
     </body>
 </html>
+
+<!--the name="" its needed in every input user name, so button don't need don´t need the name=""-->
+
+?firstname=sdasd&lastname=sdasd&email=fake%40gmail.com&password=dbgigvduv&date=2024-11-13&gender=on&cat=on
