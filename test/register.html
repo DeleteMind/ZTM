@@ -11,14 +11,14 @@
             Password: <input type="password" name="password" min="5"><br> <!-- add a password and min="5" a minimum of five chareters is required its required -->
             Birthday: <input type="date" name="date"><br>
             Gender:<br>
-            <input type="radio" name="gender">Male<br> <!--radio it is for radio buttons, we put name="or pick just one gender in this case" -->
-            <input type="radio" name="gender">Female<br>
-            <input type="radio" name="gender">Other<br>
+            <input type="radio" name="gender" value="Male">Male<br> <!--radio it is for radio buttons, we put name="or pick just one gender in this case" -->
+            <input type="radio" name="gender" value="Female">Female<br>
+            <input type="radio" name="gender" value="Others">Other<br>
             Pets:<br>
             <input type="checkbox" name="cat">Cat<br>
             <input type="checkbox" name="dog">Dogs<br>
             Cars:<br>
-            <select>
+            <select name="cars">
                 <option value="volvo" name="volvo">Volvo</option> 
                 <option value="Audi" name="audi">Audi</option>
             </select><br>
@@ -30,4 +30,3 @@
 
 <!--the name="" its needed in every input user name, so button don't need don´t need the name=""-->
 
-?firstname=sdasd&lastname=sdasd&email=fake%40gmail.com&password=dbgigvduv&date=2024-11-13&gender=on&cat=on
